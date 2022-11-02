@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound'
 import Lodgement from './pages/Lodgement'
 import About from './pages/About'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import '../styles/index.css'
+import './styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
