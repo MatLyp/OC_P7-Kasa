@@ -1,0 +1,29 @@
+.Banner {
+  width: inherit;
+  height: 111px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.Banner__Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(70%);
+}
+
+.Banner__Text {
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  top: 25%;
+  left: 16px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .Banner__Img {
+    border-radius: 25px;
+  }
+}
