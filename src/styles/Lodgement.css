@@ -1,0 +1,19 @@
+.Lodgement {
+  display: flex;
+  flex-direction: column;
+}
+
+.Lodgement__Headings__Left {
+  display: flex;
+  flex-direction: column;
+}
+
+.Lodgement__Headings__Right {
+  display: flex;
+  flex-direction: column;
+}
+
+.Lodgement__Headings__OwnerInfos {
+  display: flex;
+  flex-direction: column;
+}

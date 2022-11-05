@@ -1,0 +1,44 @@
+.Slideshow {
+  width: 100%;
+  height: 255px;
+  background-color: brown;
+  position: relative;
+}
+
+.Slideshow__Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Slideshow__Arrow {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.Slideshow__Arrow__Left {
+  height: 15%;
+  padding-left: 20px;
+  opacity: 0.9;
+}
+
+.Slideshow__Arrow__Right {
+  height: 15%;
+  padding-right: 20px;
+  opacity: 0.9;
+}
+
+.Slideshow__ContentNbr { 
+  position: absolute;
+  bottom: 15px;
+  left: 49%;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
