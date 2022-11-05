@@ -1,7 +1,10 @@
+import { useParams } from 'react-router-dom'
 import '../styles/Lodgement.css'
 
 function Lodgement() {
-  return <div>Lodgement</div>
+  const { lodgementId } = useParams()
+
+  return <main>Lodgement n°{lodgementId}</main>
 }
 
 export default Lodgement

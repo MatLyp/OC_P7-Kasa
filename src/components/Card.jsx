@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom'
 import '../styles/Card.css'
 
-function Card({ cover, title }) {
+function Card({ id, cover, title }) {
   return (
     <div className="Card__Wrapper">
-      <span className="Card__Title f--Heading">{title}</span>
-      <img src={cover} className="Card__Cover" alt="aperçu du logement" />
+      <Link to={`/logement/${id}`}>
+        <span className="Card__Title">{title}</span>
+        <img src={cover} className="Card__Cover" alt="aperçu du logement" />
+      </Link>
     </div>
   )
 }

@@ -1,0 +1,26 @@
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-Primary);
+  justify-content: space-evenly;
+}
+
+.NotFound__Heading {
+  font-weight: 700; 
+  font-size: 96px;
+}
+
+.NotFound__Link {
+  color: var(--color-Primary);
+}
+
+@media only screen and (min-width: 768px) {
+  .NotFound {
+    justify-content: space-around;
+  }
+
+  .NotFound__Heading {
+    font-size: 200px;
+  }
+}

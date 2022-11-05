@@ -1,0 +1,43 @@
+.Collapse {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Collapse__Heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 100%; */
+  background-color: var(--color-Primary);
+  color: #FFFFFF;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.Collapse__Heading:hover {
+  cursor: pointer;
+}
+
+.Collapse__Content {
+  background-color: var(--color-Secondary);
+  padding: 7px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Collapse__Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 100%; */
+    background-color: var(--color-Primary);
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  
+  .Collapse__Content {
+    
+  }
+}

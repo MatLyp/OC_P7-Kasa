@@ -1,15 +1,16 @@
-import BannerImg from '../assets/BannerBg.png'
-import BannerImgMobile from '../assets/BannerBg-mobile.png'
+// import { useState } from 'react'
 import '../styles/Banner.css'
 
-function Banner() {
+function Banner({img, imgMobile}) {
+  // const [img/winSize, setImg/setWinSize] = useState() //a voir//
+
   return (
     <div className="Banner">
       <div className="Banner__Text">Chez vous, {window.innerWidth < 768 ? (<br />) : null}partout et ailleurs</div>
       {window.innerWidth < 768 ? (
-        <img src={BannerImgMobile} className="Banner__Img" alt="décors montagne" />
+        <img src={imgMobile} className="Banner__Img" alt="décors montagne" />
       ) : (
-        <img src={BannerImg} className="Banner__Img" alt="décors montagne" />
+        <img src={img} className="Banner__Img" alt="décors montagne" />
       )}
     </div>
   )
