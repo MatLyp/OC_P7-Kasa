@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.Lodgement__Headings {
+  display: flex;
+  flex-direction: row;
+}
+
 .Lodgement__Headings__Left {
   display: flex;
   flex-direction: column;
@@ -16,4 +21,8 @@
 .Lodgement__Headings__OwnerInfos {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  
 }
