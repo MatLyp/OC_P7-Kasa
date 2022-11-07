@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
 import RatingStars from '../components/RatingStars'
 import Slideshow from '../components/Slideshow'
@@ -11,6 +11,9 @@ function Lodgement() {
 
   // Datas recovery for this specific lodgement with his id from url param
   const lodgementObj = datas.find((obj) => obj.id === lodgementId)
+  if (lodgementObj === undefined) {
+    return <Navigate to="/404" />
+  }
 
   // Create an array of <p> element for each equipments to display them on a new line
   const lodgementEquipments = []
