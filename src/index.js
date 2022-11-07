@@ -18,7 +18,7 @@ root.render(
         <Route path="/" element={<Navigate to={'/accueil'} />} />
         <Route path="/accueil" element={<Home />} />
         <Route path="/a-propos" element={<About />} />
-        <Route path="/logement/:lodgementId" element={<Lodgement />} />
+        <Route strict path="/logement/:lodgementId" element={<Lodgement />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to={'/404'} replace />} />
         {/*prop replace: bool

@@ -8,7 +8,11 @@ import '../styles/Home.css'
 function Home() {
   return (
     <main>
-      <Banner img={BannerImg} imgMobile={BannerImgMobile} />
+      <Banner
+        text="Chez vous, partout et ailleurs"
+        img={BannerImg}
+        imgMobile={BannerImgMobile}
+      />
       <section className="Home__CardsContainer">
         {datas.map(({ id, title, cover }) => (
           <Card key={id} id={id} title={title} cover={cover} />

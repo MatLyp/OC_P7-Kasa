@@ -1,0 +1,23 @@
+.Tag {
+  background-color: var(--color-Primary);
+  color: #FFFFFF;
+  min-width: 84px;
+  height: 18px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .Tag {
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}

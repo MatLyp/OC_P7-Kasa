@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* width: 100%; */
   background-color: var(--color-Primary);
   color: #FFFFFF;
   padding: 7px;
@@ -23,6 +22,7 @@
   background-color: var(--color-Secondary);
   padding: 7px;
   border-radius: 5px;
+  color: var(--color-Primary);
 }
 
 @media only screen and (min-width: 768px) {
@@ -30,14 +30,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* width: 100%; */
     background-color: var(--color-Primary);
     color: #FFFFFF;
     padding: 7px;
     border-radius: 5px;
-  }
-  
-  .Collapse__Content {
-    
   }
 }
